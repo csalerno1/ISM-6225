@@ -13,13 +13,13 @@ h1 {
 
 h2 {
     color: black;
-    font-size:25px;
+    font-size: clamp(18px, 3.5vw,30px);
 }
 
 h2 a {
   text-decoration: none;
   color: black;
-  font-size: 140%;
+  font-size: clamp(18px, 3.5vw,30px);
 }
 
 p {
@@ -61,7 +61,7 @@ li a {
   }
 
   hr {
-    border-top: 3px solid black;
+    border-top: 2px solid black;
   }
 
   table, th, td {
