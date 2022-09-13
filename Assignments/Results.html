@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -10,7 +15,7 @@
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 33%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
@@ -31,30 +36,46 @@
 .solid {border-style: solid;}
 </style>
 </head>
-<body>
+  <body>
+    <h1>Recipe Recommender System Showcase</h1><nav>
+        <ul class="navigation">
+            <li class="navigation"><a href="index.html">Home</a></li>
+            <li class="navigation"><a href="Recipes.html">Recipes</a></li>
+            <li class="navigation"><a href="Analytics.html">Analytics</a></li>
+            <li class="navigation"><a href="AboutUs.html">About Us</a></li>
+            <li class="navigation"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+     <hr>
 <h2> Results:</h2>
-<center>
-<div id="myDIV">
+
+
+<div class="row">
+  <div class="column">
+    <div id="myDIV">
 <a href="">
 <h3>Chicago Crunchy Chocolate Chip Cookies</h3>
 <img src="./Images/Cookies.jpg" alt="Italian Trulli" width="290" height="210">
 </a>
-</div><br>
-<div id="myDIV">
+</div>
+  </div>
+  <div class="column">
+    <div id="myDIV">
 <a href="">
-<center>
 <h3>Old-Fashioned Chocolate Cake</h3>
 <img src="./Images/Cake.jpg" alt="Italian Trulli" width="290" height="210">
 </a>
-</div><br>
-<div id="myDIV">
+</div>
+</div>
+  <div class="column">
+    <div id="myDIV">
 <a href="">
-<center>
 <h3>Double Fudge Saucepan Brownies</h3>
 <img src="./Images/Brownies.jpg" alt="Italian Trulli" width="290" height="210">
 </a>
 </div>
+  </div>
+</div>
 
-</center>
 </body>
 </html>
