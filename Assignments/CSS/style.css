@@ -7,26 +7,26 @@ h1 {
     background-color: green;
     padding: 10px;
     text-align: center;
-    font-size: 250%;
+    font-size: clamp(20px, 4vw,40px);
     font-weight: bold;
 }
 
 h2 {
     color: black;
-    font-size: 140%;
+    font-size: clamp(18px, 3.5vw,30px);
 }
 
 h2 a {
   text-decoration: none;
   color: black;
-  font-size: 140%;
+  font-size: clamp(18px, 3.5vw,30px);
 }
 
 p {
     color:#111;
     /*border: 2px solid black;*/
     /*padding: 10px;*/
-    font-size:120%;
+    font-size:clamp(16px, 3vw,20px);
 }
 
 ul.navigation {
@@ -57,11 +57,11 @@ li a {
   }
 
   nav {
-    font-size: 16pt
+    font-size:clamp(16px, 3vw,25px);
   }
 
   hr {
-    border-top: 3px solid black;
+    border-top: 2px solid black;
   }
 
   table, th, td {
