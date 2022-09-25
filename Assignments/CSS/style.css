@@ -119,9 +119,9 @@ img.right {
 }
 
 img.profile {
-  width: 15%;
-  margin-left: 2%;
-  padding: 10px;
+  width: 20%;
+  min-width: 250px;
+  margin-left: 1%;
 }
 
 /*Here is the css for the contact page*/
