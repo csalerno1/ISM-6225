@@ -118,6 +118,12 @@ img.right {
   padding: 10px;
 }
 
+img.profile {
+  width: 15%;
+  margin-left: 2%;
+  padding: 10px;
+}
+
 /*Here is the css for the contact page*/
 
 .container {
