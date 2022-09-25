@@ -124,12 +124,6 @@ img.profile {
   margin-left: 1%;
 }
 
-/*Here is the css for the contact page*/
-
-.container {
-  width: 90%;
-  margin: 50px auto;
-}
 
 .contact-box {
   background-color: blanchedalmond;
@@ -170,6 +164,7 @@ input {
   border-bottom: 1px solid rgb(204, 204, 204);
   outline: none;
   padding: 10px;
+  margin-left: 1px;
   padding-bottom: 5px;
 }
 
@@ -197,23 +192,35 @@ button {
   margin-top: 20px;
 }
 
+.contact-info {
+  padding: 2%;
+  background-color: green;
+  margin-right: 1px;
+}
+
+.contact-info h3 {
+  margin-top: 50px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: blanchedalmond;
+}
+
+.contact-info table {
+ 
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.contact-info tr td {
+  padding-right: auto;
+}
+
+.contact-info tr td {
+  padding-top: auto;
+}
+
 .contact-form h3 {
   color: green;
   font-weight: 600;
   margin-bottom: 50px;
 }
-
-.contact-info h3 {
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-.contact-info tr td:first-child {
-  padding-right: 20px;
-}
-
-.contact-info tr td {
-  padding-top: 20px;
-}
-
-/*CSS for contact page ends here*/
