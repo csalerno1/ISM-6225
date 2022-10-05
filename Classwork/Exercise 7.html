@@ -1,0 +1,49 @@
+﻿<!--
+  Examples to introduce charting using chart.js
+
+  Author: Manish Agrawal
+
+  Many examples use or are inspired by
+  http://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Chart.js examples</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+</head>
+<body>
+  <h1>Bar chart example</h1>
+
+  <div style="width:900px; height:400px">
+    <canvas id="barchartexample"></canvas>
+  </div>
+
+  <script>
+    new Chart(document.getElementById("barchartexample"), {
+      type: 'pie',
+      data: {
+        labels: ["Africa", "Asia", "Europe", "Latin America", "North America", "Antarctica", "Australia"],
+        datasets: [
+          {
+            label: "Population (millions)",
+            backgroundColor: ["#8E44AD", "#E74C3C", "#3498DB", "#16A085", "#2ECC71", "#F39C12", "#34495E"],
+            data: [2478, 2267, 934, 784, 833, 100, 350]
+          }
+        ]
+      },
+      options: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: 'Predicted world population (millions) in 2075'
+        }
+      }
+    });
+  </script>
+</body>
+</html>

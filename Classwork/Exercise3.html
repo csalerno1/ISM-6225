@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Exercise</title>
+
+    <script>
+        function NumberMultiplier() {
+            var x1 = prompt("What is the first number?", 0);
+            var x2 = prompt("What is the second number?", 0);
+            var x3 = prompt("What is the third number?", 0);
+            var Multiply = doMultiplication(x1, x2, x3);
+            // alert("The multiplication of "+x1+", "+x2+" and "+x3+" is "+Multiply);
+            document.getElementById("H2").textContent = "The multiplication of " + x1 + ", " + x2 + " and " + x3 + " is " + Multiply;
+        }
+
+        function doMultiplication(input1, input2, input3) {
+            var result = input1 * input2 * input3;
+            return (result);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Javascript Multiplier Input</h1>
+    <button onclick="NumberMultiplier()">Press me to multiply 3 numbers</button>
+    <h2 id="H2"></h2>
+
+</body>
+
+</html>

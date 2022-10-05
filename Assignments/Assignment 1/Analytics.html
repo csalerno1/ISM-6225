@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Recipe Recommender System Showcase</h1><nav>
+        <ul class="navigation">
+            <li class="navigation"><a href="index.html">Home</a></li>
+            <li class="navigation"><a href="Recipes.html">Recipes</a></li>
+            <li class="navigation"><a href="Analytics.html">Analytics</a></li>
+            <li class="navigation"><a href="AboutUs.html">About Us</a></li>
+            <li class="navigation"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr>
+    
+    <h2>What is a recommender system?</h2>
+    <p>The Recommender systems can be used to find new recipes with ingredients that you already have at home. </p>
+
+    <h2>Why build a recommender system?</h2>
+    <p>This recommender system is the analytics part of our assignment. At the moment it doesn't work properly, the result is always the same, but it's a prototype as of right now.</p>
+
+    <br>
+
+<h3>Please check items you have at home and we will give you all recipes you can make</h3>
+  <table>
+    <tr>
+        <th>Pantry</th>
+        <th>Refrigerator</th>
+        <th>Herbs</th>
+    </tr>
+    <td>
+        <input type="checkbox" id="ingredient1" name="ingredient1" value="Flour">
+        <label for="ingredient1">Flour</label><br></td>
+    <td>
+        <input type="checkbox" id="ingredient2" name="ingredient2" value="Butter">
+        <label for="ingredient2">Butter</label><br></td>
+    <td>
+        <input type="checkbox" id="ingredient3" name="ingredient3" value="Salt">
+        <label for="ingredient3">Salt</label><br></td>
+    <tr>
+        <td>
+            <input type="checkbox" id="ingredient4" name="ingredient4" value="Sugar">
+            <label for="ingredient4">Sugar</label><br></td>
+        <td>
+            <input type="checkbox" id="ingredient5" name="ingredient5" value="Eggs">
+            <label for="ingredient5">Eggs</label><br></td>
+        <td>
+            <input type="checkbox" id="ingredient6" name="ingredient6" value="Pepper">
+            <label for="ingredient3">Pepper</label><br>
+        </td>
+    </tr>
+    <tr>
+       <td>
+            <input type="checkbox" id="ingredient7" name="ingredient7" value="Chocolate">
+            <label for="ingredient7">Chocolate</label><br></td>
+        <td>
+            <input type="checkbox" id="ingredient8" name="ingredient8" value="Milk">
+            <label for="ingredient8">Milk</label><br></td>
+        <td>
+            <input type="checkbox" id="ingredient9" name="ingredient9" value="Cinnamon">
+            <label for="ingredient9">Cinnamon</label><br>
+    </td>
+  
+  </tr>
+  <tr>
+    <td>
+        <input type="checkbox" id="ingredient10" name="ingredient10" value="Baking Soda">
+        <label for="ingredient10">Baking Soda</label><br></td>
+    <td>
+        <input type="checkbox" id="ingredient11" name="ingredient11" value="Cheese">
+        <label for="ingredient11">Cheese</label><br></td>
+    <td>
+        <input type="checkbox" id="ingredient12" name="ingredient12" value="Basil">
+        <label for="ingredient12">Basil</label><br>
+    </td>
+  
+  </tr>
+  <tr>
+    <td>
+        <input type="checkbox" id="ingredient13" name="ingredient13" value="Pasta">
+        <label for="ingredient13">Pasta</label><br></td>
+    <td>
+        <input type="checkbox" id="ingredient14" name="ingredient14" value="Broccoli">
+        <label for="ingredient14">Broccoli</label><br></td>
+    <td>
+        <input type="checkbox" id="ingredient15" name="ingredient15" value="Paprika">
+        <label for="ingredient15">Paprika</label><br>
+   </td>
+  
+  </tr>
+</table><br>
+<button onclick="location.href='Results.html'" type="button">Find Recipes</button>
+</body>
+</html>
