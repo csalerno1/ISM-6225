@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <title>JavaScript event handlers</title>
-  <script>
+  <script async>
     function doAlert(msg) {
       alert(msg);
     }
@@ -28,6 +28,11 @@
 
     });
 
+
+
+    var b2 = document.getElementById("button1");
+    //b2.onclick = doAlert("Hello world in script!");
+    b2.onclick = sayHello2;
   </script>
 </head>
 
@@ -47,10 +52,6 @@
   <div><input id="button1" type="button" value="Click me"/></div>
 
   <!-- https://stackoverflow.com/questions/9899372/pure-javascript-equivalent-of-jquerys-ready-how-to-call-a-function-when-t -->
-  <script>
-    var b2 = document.getElementById("button1");
-    //b2.onclick = doAlert("Hello world in script!");
-    b2.onclick = sayHello2;
-  </script>
+  
 </body>
 </html>
