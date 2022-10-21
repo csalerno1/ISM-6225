@@ -33,7 +33,55 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
+  <script>
+	function chooseServingSize()
+	{
+			var people = prompt("Input the number of people you are making this recipe for (1-8 people).", 0);
+			
+			if (people == 0) {
+					alert("You can't make a recipe with 0 servings! Please input a number between 1-8.");
+			}
 
+			else if (people>=1 && people<=8) {
+					var beef = 0.25 * people;
+					var cabbage = 0.25 * people;
+					var tomatoes = 3.5 * people;
+					var sauce = 3.5 * people;
+					var paste = 0.5 * people;
+					var broth = 0.5 * people;
+					var onion = people;
+					var beans = 2 * people;
+
+					var x=document.getElementById('Ingredients').rows[parseInt(0,10)].cells;
+					x[parseInt(0,10)].innerHTML= beef + " Pound(s) Lean Ground Beef";
+					x[parseInt(1,10)].innerHTML= cabbage + " Pound(s) of Cabbage";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(1,10)].cells;
+					x[parseInt(0,10)].innerHTML= tomatoes + "oz Crushed Tomatoes";
+					x[parseInt(1,10)].innerHTML= sauce + "oz Tomato Sauce";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(2,10)].cells;
+					x[parseInt(0,10)].innerHTML= paste + "oz Tomato Paste";
+					x[parseInt(1,10)].innerHTML= broth + " Cup(s) Low Sodium Beef Broth";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(3,10)].cells;
+					x[parseInt(0,10)].innerHTML= onion + "/8 Medium White Onion";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(6,10)].cells;
+					x[parseInt(0,10)].innerHTML= beans + "oz Kidney Beans (Optional)";
+					
+			}
+			
+			else if (people>8) {
+					alert("The instant pot needed for this recipe can't fit ingredients for more than 8 people. Please select a smaller serving size.");
+			}
+
+			else {
+					alert("An error occured. Did you input a number?")
+			}
+	}
+
+</script>
 
 <script>
 	function comments()
@@ -45,7 +93,7 @@
 
 <body>
 
-
+<!-- HEADER OF ALL PAGES     -->
 	<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
 		<div class="container-fluid">
 		  <a class="navbar-brand" href="index.html">
@@ -88,13 +136,15 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block text-center">
-          <span class="text-white">News details</span>
-          <h1 class="text-capitalize mb-5 text-lg">Blog Single</h1>
+ 
+          <h1 class="text-capitalize mb-5 text-lg">Recipes</h1>
 
           <ul class="list-inline breadcumb-nav">
             <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">News details</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Recipies</a></li>
+			<li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Instant Pot Unstuffed Cabbage Soup</a></li>
           </ul>
         </div>
       </div>
@@ -414,9 +464,9 @@
 			<div class="col-lg-3 mr-auto col-sm-6">
 				<div class="widget mb-5 mb-lg-0">
 					<div class="logo mb-4">
-						<h3>USF</h3>
+						<h3>ISM 6225</h3>
 					</div>
-					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+					<p>The possibilities are endless with the creation of our new recipe website!</p>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-6 col-sm-6">
@@ -435,8 +485,8 @@
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="widget widget-contact mb-5 mb-lg-0">
 					<h4 class="text-capitalize mb-4">Get in Touch</h4>
-					<h6><a href="tel:+23-345-67890" > <i class="ti-headphone-alt mr-3"></i>Support@megakit.com</a></h6>
-					<h6><a href="mailto:support@gmail.com" > <i class="ti-mobile mr-3"></i>+23-456-6588</a></h6>
+					<h6><a href="tel:+23-345-67890" > <i class="ti-headphone-alt mr-3"></i>Support@ISM6225.com</a></h6>
+					<h6><a href="mailto:support@gmail.com" > <i class="ti-mobile mr-3"></i>+62-256-2256</a></h6>
 
 					<ul class="list-inline footer-socials mt-5">
 						<li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="ti-facebook mr-2"></i></a></li>
