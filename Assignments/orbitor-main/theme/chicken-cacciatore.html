@@ -29,7 +29,8 @@
                                 var sauce = people;
                                 var paste = 0.75 * people;
                                 var wine = people;
-                                var garlic = 0.05 * people;
+                                var garlic = 0.5 * people;
+                                var sugar = people;
 
                                 var x=document.getElementById('Ingredients').rows[parseInt(0,10)].cells;
                                 x[parseInt(0,10)].innerHTML= chicken + " Pounds Lean Ground Beef";
@@ -43,8 +44,8 @@
                                 x[parseInt(1,10)].innerHTML= celery + " Celery Ribs, Sliced";
 
                                 var x=document.getElementById('Ingredients').rows[parseInt(3,10)].cells;
-                                x[parseInt(0,10)].innerHTML= onion + "/8 Large Green Pepper";
-                                x[parseInt(1,10)].innerHTML= celery + " Cups Fresh Mushrooms, Sliced";
+                                x[parseInt(0,10)].innerHTML= pepper + "/8 Large Green Pepper, Sliced";
+                                x[parseInt(1,10)].innerHTML= mushrooms + " Cups Fresh Mushrooms, Sliced";
 
                                 var x=document.getElementById('Ingredients').rows[parseInt(4,10)].cells;
                                 x[parseInt(0,10)].innerHTML= tomatoes + " oz Canned Diced Tomatoes, drained";
@@ -55,12 +56,12 @@
                                 x[parseInt(1,10)].innerHTML= sauce + " oz Dry Red Wine (or Water)";
 
                                 var x=document.getElementById('Ingredients').rows[parseInt(8,10)].cells;
-                                x[parseInt(0,10)].innerHTML= wine + " oz Minced Garlic";
-                                x[parseInt(1,10)].innerHTML= sauce + "/8 tbsp Sugar";
+                                x[parseInt(0,10)].innerHTML= garlic + " Garlic Cloves, Minced";
+                                x[parseInt(1,10)].innerHTML= sugar + "/8 tbsp Sugar";
                         }
                         
                         else if (people>8) {
-                                alert("The instant pot needed for this recipe can't fit ingredients for more than 8 people. Please select a smaller serving size.");
+                                alert("The skillet pan needed for this recipe can't fit ingredients for more than 8 people. Please select a smaller serving size.");
                         }
 
                         else {
@@ -105,30 +106,34 @@
         </center>
 
         <center>
-        <table border="3">
+        <form> 
+                <input type="button" class="button1" onclick="chooseServingSize()" value="Click here to choose Serving Size! Upon loading, this page is showing the recipe for 8 people."> 
+        </form>
+
+        <table id="Ingredients" border="3">
         <tr>
                 <th>4 Pounds Cut Up Chicken</th>
                 <th>Salt and Pepper (optional)</th>
         </tr>
         <tr>
-                <th>Olive Oil, 2 tbsp</th>
-                <th>Butter, 2 tbsp</th>
+                <th>2 tbsp of Olive Oil</th>
+                <th>2 tbsp of Butter</th>
         </tr>
         <tr>
-                <th>1 Large Onion, chopped</th>
+                <th>2 Cups of Chopped Onion</th>
                 <th>2 Celery Ribs, sliced</th>
         </tr>
         <tr>
                 <th>1 Large Green Pepper, sliced</th>
-                <th>1/2 Pounds Fresh Mushrooms, sliced</th>
+                <th>6 Cups Fresh Mushrooms, sliced</th>
         </tr>
         <tr>
-                <th>1 Can (28 oz) Tomatoes, drained and chopped</th>
-                <th>1 Can (8 oz) Tomato Sauce</th>
+                <th>28 oz Canned Diced Tomatoes, drained</th>
+                <th>8 oz Tomato Sauce</th>
         </tr>
         <tr>
-                <th>1 Can (6 oz) Tomato Paste</th>
-                <th>1 Cup Dry Red Wine (or Water)</th>
+                <th>6 oz Tomato Paste</th>
+                <th>8 oz Dry Red Wine (or Water)</th>
         </tr>
         <tr>
                 <th>Dried Thyme to Taste</th>
@@ -139,8 +144,8 @@
                 <th>Dried Basil to Taste</th>
         </tr>
         <tr>
-                <th>3 Garlic Cloves, minced</th>
-                <th>Sugar, 1 tbsp</th>
+                <th>4 Garlic Cloves, Minced</th>
+                <th>1 tbsp Sugar</th>
         </tr>
         <tr>
                 <th>Grated Parmesan Cheese</th>
