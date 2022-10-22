@@ -43,33 +43,39 @@
 			}
 
 			else if (people>=1 && people<=8) {
-					var beef = 0.25 * people;
-					var cabbage = 0.25 * people;
-					var tomatoes = 3.5 * people;
-					var sauce = 3.5 * people;
-					var paste = 0.5 * people;
-					var broth = 0.5 * people;
-					var onion = people;
-					var beans = 2 * people;
+					var beef = 0.3 * people;
+					var onion = 0.25 * people;
+					var carrots = 0.5 * people;
+					var celery = 0.5 * people;
+					var paste = 0.25 * people;
+					var worsh = 0.5 * people;
+					var garlic = 0.25 * people;
+					var potatoes = 0.5 * people;
+					var guinness = 4 * people;
+					var stock = 0.5 * people;
 
 					var x=document.getElementById('Ingredients').rows[parseInt(0,10)].cells;
-					x[parseInt(0,10)].innerHTML= beef + " Pound(s) Lean Ground Beef";
-					x[parseInt(1,10)].innerHTML= cabbage + " Pound(s) of Cabbage";
+					x[parseInt(0,10)].innerHTML= beef + " Pound(s) Stew Meat, Beef";
+					x[parseInt(1,10)].innerHTML= onion + " Onion(s)";
 
 					var x=document.getElementById('Ingredients').rows[parseInt(1,10)].cells;
-					x[parseInt(0,10)].innerHTML= tomatoes + "oz Crushed Tomatoes";
-					x[parseInt(1,10)].innerHTML= sauce + "oz Tomato Sauce";
-
-					var x=document.getElementById('Ingredients').rows[parseInt(2,10)].cells;
-					x[parseInt(0,10)].innerHTML= paste + "oz Tomato Paste";
-					x[parseInt(1,10)].innerHTML= broth + " Cup(s) Low Sodium Beef Broth";
+					x[parseInt(0,10)].innerHTML= carrots + " Carrot(s)";
+					x[parseInt(1,10)].innerHTML= celery + " Stalk(s) of Celery";
 
 					var x=document.getElementById('Ingredients').rows[parseInt(3,10)].cells;
-					x[parseInt(0,10)].innerHTML= onion + "/8 Medium White Onion";
+					
+					x[parseInt(1,10)].innerHTML= paste + "oz Tomato Paste";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(4,10)].cells;
+					x[parseInt(0,10)].innerHTML= worsh + "tbsp Worchestershire Sauce";
+					x[parseInt(1,10)].innerHTML= garlic + "tbsp Minced Garlic";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(5,10)].cells;
+					x[parseInt(0,10)].innerHTML= potatoes + " Medium Sized Potatoe(s)";
 
 					var x=document.getElementById('Ingredients').rows[parseInt(6,10)].cells;
-					x[parseInt(0,10)].innerHTML= beans + "oz Kidney Beans (Optional)";
-					
+					x[parseInt(0,10)].innerHTML= guinness + "oz Guinness Stout";
+					x[parseInt(1,10)].innerHTML= stock + " Cup(s) Beef Stock";
 			}
 			
 			else if (people>8) {
@@ -144,7 +150,7 @@
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item"><a href="#" class="text-white-50">Recipies</a></li>
 			<li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">Instant Pot Unstuffed Cabbage Soup</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Instant Pot Guinness Beef Stew</a></li>
           </ul>
         </div>
       </div>
@@ -159,19 +165,18 @@
         <div class="row">
 	<div class="col-lg-12 mb-5">
 		<div class="single-blog-item">
-			<img src="images/recipes/soup.jpg" alt="" class="img-fluid rounded">
+			<img src="images/recipes/GuinnessStew.jpg" alt="" class="img-fluid rounded">
 
 			<div class="blog-item-content mt-4">
-				<h2 class="mt-3 mb-3 text-md">Instant Pot Unstuffed Cabbage Stew</a></h2>
+				<h2 class="mt-3 mb-3 text-md">Instant Pot Guinness Beef Stew</a></h2>
 				<div class="blog-item-meta mb-5">
-					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>253 Likes</span>
-					<span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>2 Comments</span>
-					<span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 15th October 2015</span>
+					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>78 Likes</span>
+					<span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>1 Comment</span>
+					<span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 27th November 2021</span>
 				</div> 
 
-				<p class="lead mb-4">This recipe is a variation of the Polish dish, stuffed cabbage,
-					and is a quick and easy one-pot meal. Goes great
-					with dipping bread. </p>
+				<p class="lead mb-4">This is a classic and hearty one-pot recipe that will feed the family and give leftovers. 
+					Goes great with dipping bread! Makes 8 servings. </p>
 
 				<blockquote class="quote">
 					<center>
@@ -191,34 +196,37 @@
 					
 					<table id="Ingredients" style="text-align:center" border="3">
 						<tr>
-								<th>2 Pounds Lean Ground Beef</th>
-								<th>1 Whole Medium Sized Cabbage</th>
+							<th>2.5 Pounds Stew Meat (pre-cut)</th>
+							<th>2 Onions</th>
 						</tr>
 						<tr>
-								<th>28oz Whole Crushed Tomatoes</th>
-								<th>28oz Tomato Sauce</th>
+							<th>4 Carrots</th>
+							<th>4 Celery Stalks</th>
 						</tr>
 						<tr>
-								<th>4oz Tomato Paste</th>
-								<th>4 Cups Low Sodium Beef Broth</th>
+						<th>1 Bay Leaf </th>
+						<th>Rosemary to taste</th>
 						</tr>
 						<tr>
-								<th>1 Medium Onion</th>
-								<th>Olive Oil, drizzle</th>
+						<th>Thyme to taste</th>
+						<th>2 tbsp Tomato Paste</th>
 						</tr>
 						<tr>
-								<th>Oregano</th>
-								<th>Basil</th>
+						<th>4 tbsp Worchestershire Sauce </th>
+						<th>2 tbsp Minced Garlic</th>
 						</tr>
 						<tr>
-								<th>Salt</th>
-								<th>Pepper</th>
+						<th>4 Medium Sized Potatoes</th>
+						<th>Parsley to Taste</th>
 						</tr>
 						<tr>
-								<th>16oz Kidney Beans (optional)</th>
-								<th>Sour Cream (for garnish)</th>
+						<th>32oz Guinness Stout</th>
+						<th>2 Cups Beef Stock</th>
 						</tr>
-				
+						<tr>
+						<th>2 tbsp corn starch</th>
+						<th>Salt and Pepper</th>
+						</tr>
 				
 				
 						</table>
@@ -252,17 +260,14 @@
 	
 			<p>
 			1. Turn the Instant Pot on the saute setting. Add a drizzle of olive oil and let it heat up. <br><br>
-			2. Add the ground beef. Season with salt and pepper to your liking. <br>Cook beef, breaking it up and stirring
-			occasionally, until browned. Turn off the Instant Pot by selecting "Cancel". <br><br>
-			3. Slice the onion and cabbage into bite-size pieces. <br>Add onion to Instant Pot first, then add as much cabbage
-			that will fit in the pot without pushing it down (leave a little room at the top) <br><br>
-			4. Add the crushed tomatoes, tomato sauce, tomato paste, and kidney beans (optional). <br><br>
-			5. Add as much beef broth as it takes to fill the pot to the top. <br><br>
-			6. Add the oregano, basil, and as much salt and pepper as desired. Stir the mixture. <br><br>
-			7. Secure the lid on the Instant Pot. Cook on high pressure for 30 minutes. <br><br>
-			8. Once the soup is done cooking, do an instant pressure release. <br>Add additional seasoning such as 
-			salt and pepper as necessary. <br><br>
-			9. Dish out the soup and add a small spoonful of sour cream as an optional garnish.
+			2. Add the stew meat. Season with salt and pepper to your liking. <br>Cook beef, stirring
+			occasionally, until just browned. Turn off the instant pot for now. Remove the stew meat and set aside. <br><br>
+			3. Slice the onion, carrots and celery. <br>Add to Instant Pot, turning on the saute funtion agian.
+			Saute for 5 minutes. Turn off the Saute funtion again. <br><br>
+			4. Add all other ingredients except for the potatoes. Close the lid and move the valve to sealing. Pressure cook for 30 minutes. <br><br>
+			5. Release the pressure and add the potatoes. Pressure cook for another 10 minutes. <br><br>
+			6. Release the pressure and mix together the corn starch and 1/4 cup of water. Add the mixture to the stew
+			and stir occassionally until thickened. <br><br>
 			</p> </font>
 
 			<h3><font color=green>Enjoy!</font></h3>
@@ -287,7 +292,7 @@
 			<div class="posts-prev-item mb-4 mb-lg-0">
 				<span class="nav-posts-desc">- Previous Recipe</span>
 				<h6 class="nav-posts-title mt-1">
-					<a href="GuinnessBeefStew.html">Guinness Beef Stew</a>
+					<a href="EggBites2.html">Bacon and Italian Cheese Egg Bites</a>
 				</h6>
 			</div>
 			<div class="border"></div>
@@ -295,7 +300,7 @@
 			<div class="posts-next-item pt-4 pt-lg-0">
 				<span class="nav-posts-desc text-lg-right text-md-right d-block">- Next Recipe</span>
 				<h6 class="nav-posts-title mt-1">
-					<a href="chicken-cacciatore.html">Chicken Cacciatore</a>
+					<a href="chicken-cacciatore.html">Zucchini Bread</a>
 				</h6>
 			</div>
 		</div>
@@ -303,52 +308,29 @@
 
 	<div class="col-lg-12">
 		<div class="comment-area mt-4 mb-5">
-			<h4 class="mb-4">2 Comments</h4>
+			<h4 class="mb-4">1 Comment</h4>
 			<ul class="comment-tree list-unstyled">
 				<li class="mb-5">
 					<div class="comment-area-box">
-						<div class="comment-thumb float-left">
-							<img alt="" src="images/blog/testimonial1.jpg" class="img-fluid">
-						</div>
+						
 
 						<div class="comment-info">
-							<h5 class="mb-1">John</h5>
+							<h5 class="mb-1">Jacob</h5>
 							<span>Michigan</span>
-							<span class="date-comm">| Posted October 7, 2018</span>
+							<span class="date-comm">| Posted October 7, 2022</span>
 						</div>
 						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
-							<a href="#"><i class="icofont-reply mr-2 text-muted"></i>Reply</a>
+							<i class="icofont-reply mr-2 text-muted"></i>Reply
 							
 						</div>
 
 						<div class="comment-content mt-3">
-							<p> Great meal! I made a large batch and it fed my family for a few days. </p>
+							<p> Delicous meal. It tastes like the guinness stew I get at restaurants! </p>
 						</div>
 					</div>
 				</li>
 
-				<li>
-					<div class="comment-area-box">
-						<div class="comment-thumb float-left">
-							<img alt="" src="images/blog/testimonial2.jpg" class="img-fluid">
-						</div>
-
-						<div class="comment-info">
-							<h5 class="mb-1">Philip W</h5>
-							<span>Florida</span>
-							<span class="date-comm">| Posted July 16, 2020</span>
-						</div>
-
-						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
-							<a href="#"><i class="icofont-reply mr-2 text-muted"></i>Reply </a>
-							
-						</div>
-
-						<div class="comment-content mt-3">
-							<p> I suggest using leaner ground beef so there's no extra grease in the soup. Thanks for the recipe! </p>
-						</div>
-					</div>
-				</li>
+				
 			</ul>
 		</div>
 	</div>
@@ -381,7 +363,7 @@
         <div class="sidebar-wrap pl-lg-4 mt-5 mt-lg-0">
 	<div class="sidebar-widget search  mb-3 ">
 		<h5>Search Here</h5>
-		<form action="#" class="search-form">
+		<form action="recipes-sidebar.html" class="search-form">
 			<input type="text" class="form-control" placeholder="search">
 			<i class="ti-search"></i>
 		</form>
@@ -399,13 +381,7 @@
             </div>
         </div>
 
-        <div class="media py-3">
-            <a href="#"><img class="mr-4" src="images/blog/bt-2.jpg" alt=""></a>
-           <div class="media-body">
-           		<span class="text-sm text-muted">27 Nov 2021</span>
-                <h6 class="my-2"><a href="#">Guinness Beef Stew</a></h6>
-            </div>
-        </div>
+       
 
         <div class="media py-3">
             <a href="#"><img class="mr-4" src="images/blog/bt-1.jpg" alt=""></a>
@@ -425,10 +401,6 @@
 		    <span>(14)</span>
 		  </li>
 		  <li class="align-items-center">
-		    <a href="#">Low Calorie</a>
-		    <span>(2)</span>
-		  </li>
-		  <li class="align-items-center">
 		    <a href="#">Soups</a>
 		    <span>(10)</span>
 		  </li>
@@ -440,7 +412,7 @@
 		<h5 class="mb-4">Keywords</h5>
 
 		<a>Beef</a>
-		<a>Polish</a>
+		<a>Irish</a>
 		<a>Comfort meal</a>
 		<a>Instant Pot</a>
 		<a>Easy</a>
