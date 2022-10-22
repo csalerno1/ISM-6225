@@ -13,7 +13,7 @@
   <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
   <meta name="author" content="themefisher.com">
 
-  <title>Orbitor - Software Company Template</title>
+  <title>USF ISM 6225 - Recipe Website</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -34,52 +34,65 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script>
-	function chooseServingSize()
-	{
-			var people = prompt("Input the number of people you are making this recipe for (1-8 people).", 0);
-			
-			if (people == 0) {
-					alert("You can't make a recipe with 0 servings! Please input a number between 1-8.");
-			}
+    function chooseServingSize()
+    {
+            var people = prompt("Input the number of people you are making this recipe for (1-8 people).", 0);
+            
+            if (people == 0) {
+                    alert("You can't make a recipe with 0 servings! Please input a number between 1-8.");
+            }
 
-			else if (people>=1 && people<=8) {
-					var beef = 0.25 * people;
-					var cabbage = 0.25 * people;
-					var tomatoes = 3.5 * people;
-					var sauce = 3.5 * people;
-					var paste = 0.5 * people;
-					var broth = 0.5 * people;
-					var onion = people;
-					var beans = 2 * people;
+            else if (people>=1 && people<=8) {
+                    var chicken = 0.5 * people;
+                    var oil = 0.25 * people;
+                    var butter = 0.25 * people;
+                    var onion = 0.25 * people;
+                    var celery = 0.25 * people;
+                    var pepper = people;
+                    var mushrooms = 0.75 * people;
+                    var tomatoes = 3.5 * people;
+                    var sauce = people;
+                    var paste = 0.75 * people;
+                    var wine = people;
+                    var garlic = 0.5 * people;
+                    var sugar = people;
 
-					var x=document.getElementById('Ingredients').rows[parseInt(0,10)].cells;
-					x[parseInt(0,10)].innerHTML= beef + " Pound(s) Lean Ground Beef";
-					x[parseInt(1,10)].innerHTML= cabbage + " Pound(s) of Cabbage";
+                    var x=document.getElementById('Ingredients').rows[parseInt(0,10)].cells;
+                    x[parseInt(0,10)].innerHTML= chicken + " Pounds Lean Ground Beef";
 
-					var x=document.getElementById('Ingredients').rows[parseInt(1,10)].cells;
-					x[parseInt(0,10)].innerHTML= tomatoes + "oz Crushed Tomatoes";
-					x[parseInt(1,10)].innerHTML= sauce + "oz Tomato Sauce";
+                    var x=document.getElementById('Ingredients').rows[parseInt(1,10)].cells;
+                    x[parseInt(0,10)].innerHTML= oil + " tbsp of Olive Oil";
+                    x[parseInt(1,10)].innerHTML= butter + " tbsp of Butter";
 
-					var x=document.getElementById('Ingredients').rows[parseInt(2,10)].cells;
-					x[parseInt(0,10)].innerHTML= paste + "oz Tomato Paste";
-					x[parseInt(1,10)].innerHTML= broth + " Cup(s) Low Sodium Beef Broth";
+                    var x=document.getElementById('Ingredients').rows[parseInt(2,10)].cells;
+                    x[parseInt(0,10)].innerHTML= onion + " Cups of Chopped Onion";
+                    x[parseInt(1,10)].innerHTML= celery + " Celery Ribs, Sliced";
 
-					var x=document.getElementById('Ingredients').rows[parseInt(3,10)].cells;
-					x[parseInt(0,10)].innerHTML= onion + "/8 Medium White Onion";
+                    var x=document.getElementById('Ingredients').rows[parseInt(3,10)].cells;
+                    x[parseInt(0,10)].innerHTML= pepper + "/8 Large Green Pepper, Sliced";
+                    x[parseInt(1,10)].innerHTML= mushrooms + " Cups Fresh Mushrooms, Sliced";
 
-					var x=document.getElementById('Ingredients').rows[parseInt(6,10)].cells;
-					x[parseInt(0,10)].innerHTML= beans + "oz Kidney Beans (Optional)";
-					
-			}
-			
-			else if (people>8) {
-					alert("The instant pot needed for this recipe can't fit ingredients for more than 8 people. Please select a smaller serving size.");
-			}
+                    var x=document.getElementById('Ingredients').rows[parseInt(4,10)].cells;
+                    x[parseInt(0,10)].innerHTML= tomatoes + " oz Canned Diced Tomatoes, drained";
+                    x[parseInt(1,10)].innerHTML= sauce + " oz Tomato Sauce";
 
-			else {
-					alert("An error occured. Did you input a number?")
-			}
-	}
+                    var x=document.getElementById('Ingredients').rows[parseInt(5,10)].cells;
+                    x[parseInt(0,10)].innerHTML= wine + " oz Tomato Paste";
+                    x[parseInt(1,10)].innerHTML= sauce + " oz Dry Red Wine (or Water)";
+
+                    var x=document.getElementById('Ingredients').rows[parseInt(8,10)].cells;
+                    x[parseInt(0,10)].innerHTML= garlic + " Garlic Cloves, Minced";
+                    x[parseInt(1,10)].innerHTML= sugar + "/8 tbsp Sugar";
+            }
+            
+            else if (people>8) {
+                    alert("The skillet pan needed for this recipe can't fit ingredients for more than 8 people. Please select a smaller serving size.");
+            }
+
+            else {
+                    alert("An error occured. Did you input a number?")
+            }
+    }
 
 </script>
 
@@ -144,7 +157,7 @@
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item"><a href="#" class="text-white-50">Recipies</a></li>
 			<li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">Instant Pot Unstuffed Cabbage Soup</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Chicken Cacciatore</a></li>
           </ul>
         </div>
       </div>
@@ -159,19 +172,18 @@
         <div class="row">
 	<div class="col-lg-12 mb-5">
 		<div class="single-blog-item">
-			<img src="images/recipes/soup.jpg" alt="" class="img-fluid rounded">
+			<img src="images/recipes/chicken-cacciatore-photo.jpg" alt="" class="img-fluid rounded">
 
 			<div class="blog-item-content mt-4">
-				<h2 class="mt-3 mb-3 text-md">Instant Pot Unstuffed Cabbage Stew</a></h2>
+				<h2 class="mt-3 mb-3 text-md">Chicken Cacciatore</a></h2>
 				<div class="blog-item-meta mb-5">
-					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>253 Likes</span>
-					<span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>2 Comments</span>
-					<span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 15th October 2015</span>
+					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>316 Likes</span>
+					<span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>3 Comments</span>
+					<span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 6th February 2017</span>
 				</div> 
 
-				<p class="lead mb-4">This recipe is a variation of the Polish dish, stuffed cabbage,
-					and is a quick and easy one-pot meal. Goes great
-					with dipping bread. </p>
+				<p class="lead mb-4">This recipe is great for a family meal or Sunday dinner! It is
+					<br>a classic dish that has an abundance of flavor! Makes about 8 servings. </p>
 
 				<blockquote class="quote">
 					<center>
@@ -191,33 +203,45 @@
 					
 					<table id="Ingredients" style="text-align:center" border="3">
 						<tr>
-								<th>2 Pounds Lean Ground Beef</th>
-								<th>1 Whole Medium Sized Cabbage</th>
-						</tr>
-						<tr>
-								<th>28oz Whole Crushed Tomatoes</th>
-								<th>28oz Tomato Sauce</th>
-						</tr>
-						<tr>
-								<th>4oz Tomato Paste</th>
-								<th>4 Cups Low Sodium Beef Broth</th>
-						</tr>
-						<tr>
-								<th>1 Medium Onion</th>
-								<th>Olive Oil, drizzle</th>
-						</tr>
-						<tr>
-								<th>Oregano</th>
-								<th>Basil</th>
-						</tr>
-						<tr>
-								<th>Salt</th>
-								<th>Pepper</th>
-						</tr>
-						<tr>
-								<th>16oz Kidney Beans (optional)</th>
-								<th>Sour Cream (for garnish)</th>
-						</tr>
+                            <th>4 Pounds Cut Up Chicken</th>
+                            <th>Salt and Pepper (optional)</th>
+                        </tr>
+                        <tr>
+                            <th>2 tbsp of Olive Oil</th>
+                            <th>2 tbsp of Butter</th>
+                        </tr>
+                        <tr>
+                            <th>2 Cups of Chopped Onion</th>
+                            <th>2 Celery Ribs, sliced</th>
+                         </tr>
+                         <tr>
+                            <th>1 Large Green Pepper, sliced</th>
+                            <th>6 Cups Fresh Mushrooms, sliced</th>
+                        </tr>
+                         <tr>
+                            <th>28 oz Canned Diced Tomatoes, drained</th>
+                            <th>8 oz Tomato Sauce</th>
+                         </tr>
+                         <tr>
+                            <th>6 oz Tomato Paste</th>
+                            <th>8 oz Dry Red Wine (or Water)</th>
+                        </tr>
+                        <tr>
+                            <th>Dried Thyme to Taste</th>
+                            <th>Dried Rosemary to Taste</th>
+                        </tr>
+                        <tr>
+                            <th>Dried Oregano to Taste</th>
+                            <th>Dried Basil to Taste</th>
+                        </tr>
+                        <tr>
+                            <th>4 Garlic Cloves, Minced</th>
+                            <th>1 tbsp Sugar</th>
+                         </tr>
+                        <tr>
+                            <th>Grated Parmesan Cheese</th>
+                            <th>Pasta (Ziti is reccommended)</th>
+                        </tr>
 				
 				
 				
@@ -233,14 +257,22 @@
 					<table id= "Kitchen Needs" style="text-align:center" border="3">
 						
 						<tr>
-								<th>Instant Pot</th>
-								<th>Large Stirring Spoon</th>
-						</tr>
-						<tr>
-								<th>Cutting Board</th>
-								<th>Large Knife</th>
-						</tr>
-						</table>
+                            <th>Large Skillet Pan</th>
+                            <th>Stove</th>
+                        </tr>
+                        <tr>
+                            <th>Large Pot and Large Plate</th>
+                            <th>Spatula</th>
+                        </tr>
+                        <tr>
+                            <th>Box Grater</th>
+                            <th>Large Knife</th>
+                        </tr>
+                        <tr>
+                            <th>Cutting Board</th>
+                            <th>Food Processor (optional)</th>
+                        </tr>
+					</table>
 					
 				</h6>
 				<br><br>
@@ -250,20 +282,17 @@
 					<p><hr color="black" width = "100%"></p>
 			    
 	
-			<p>
-			1. Turn the Instant Pot on the saute setting. Add a drizzle of olive oil and let it heat up. <br><br>
-			2. Add the ground beef. Season with salt and pepper to your liking. <br>Cook beef, breaking it up and stirring
-			occasionally, until browned. Turn off the Instant Pot by selecting "Cancel". <br><br>
-			3. Slice the onion and cabbage into bite-size pieces. <br>Add onion to Instant Pot first, then add as much cabbage
-			that will fit in the pot without pushing it down (leave a little room at the top) <br><br>
-			4. Add the crushed tomatoes, tomato sauce, tomato paste, and kidney beans (optional). <br><br>
-			5. Add as much beef broth as it takes to fill the pot to the top. <br><br>
-			6. Add the oregano, basil, and as much salt and pepper as desired. Stir the mixture. <br><br>
-			7. Secure the lid on the Instant Pot. Cook on high pressure for 30 minutes. <br><br>
-			8. Once the soup is done cooking, do an instant pressure release. <br>Add additional seasoning such as 
-			salt and pepper as necessary. <br><br>
-			9. Dish out the soup and add a small spoonful of sour cream as an optional garnish.
-			</p> </font>
+                    <p>
+                        1. Dust chicken with flour. Season with salt and pepper. <br><br>
+                        2. In a large skillet, brown chicken on all sides in oil and butter <br>
+                        over medium-high heat. Remove chicken to platter. <br><br>
+                        3. In the same skillet, cook and stir the onion, celery, pepper and mushrooms for 5 minutes.
+                        <br>Stir in the tomatoes, tomato sauce, tomato paste, wine, herbs, garlic and sugar.
+                        <br>Bring to a boil. Reduce heat; cover and simmer for 30 minutes.<br><br>
+                        4. Return chicken to skillet. Cover and simmer for 45-60 minutes or until chicken is tender.<br><br>
+                        5. In a large pot, cook pasta of your choice. <br><br>
+                        6. Plate, serve over pasta, sprinkle with parmesan cheese, and enjoy! <br><br>
+                        </p> </font>
 
 			<h3><font color=green>Enjoy!</font></h3>
 				<div class="tag-option mt-5 clearfix">
@@ -287,7 +316,7 @@
 			<div class="posts-prev-item mb-4 mb-lg-0">
 				<span class="nav-posts-desc">- Previous Recipe</span>
 				<h6 class="nav-posts-title mt-1">
-					<a href="GuinnessBeefStew.html">Guinness Beef Stew</a>
+					<a href="UnstuffedCabbage2.html">Creamy Chicken Casserole</a>
 				</h6>
 			</div>
 			<div class="border"></div>
@@ -295,7 +324,7 @@
 			<div class="posts-next-item pt-4 pt-lg-0">
 				<span class="nav-posts-desc text-lg-right text-md-right d-block">- Next Recipe</span>
 				<h6 class="nav-posts-title mt-1">
-					<a href="chicken-cacciatore.html">Chicken Cacciatore</a>
+					<a href="chicken-cacciatore.html">Egg Bites</a>
 				</h6>
 			</div>
 		</div>
@@ -307,45 +336,59 @@
 			<ul class="comment-tree list-unstyled">
 				<li class="mb-5">
 					<div class="comment-area-box">
-						<div class="comment-thumb float-left">
-							<img alt="" src="images/blog/testimonial1.jpg" class="img-fluid">
-						</div>
 
 						<div class="comment-info">
-							<h5 class="mb-1">John</h5>
-							<span>Michigan</span>
-							<span class="date-comm">| Posted October 7, 2018</span>
+							<h5 class="mb-1">Linda</h5>
+							<span>California</span>
+							<span class="date-comm">| Posted October 22, 2019</span>
 						</div>
 						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
-							<a href="#"><i class="icofont-reply mr-2 text-muted"></i>Reply</a>
+							<i class="icofont-reply mr-2 text-muted"></i>Reply
 							
 						</div>
 
 						<div class="comment-content mt-3">
-							<p> Great meal! I made a large batch and it fed my family for a few days. </p>
+							<p> Wonderful elegant but easy dinner to serve to guests! </p>
 						</div>
 					</div>
 				</li>
 
 				<li>
 					<div class="comment-area-box">
-						<div class="comment-thumb float-left">
-							<img alt="" src="images/blog/testimonial2.jpg" class="img-fluid">
-						</div>
+						
 
 						<div class="comment-info">
-							<h5 class="mb-1">Philip W</h5>
-							<span>Florida</span>
-							<span class="date-comm">| Posted July 16, 2020</span>
+							<h5 class="mb-1">Matthew</h5>
+							<span>North Carolina</span>
+							<span class="date-comm">| Posted March 16, 2021</span>
 						</div>
 
 						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
-							<a href="#"><i class="icofont-reply mr-2 text-muted"></i>Reply </a>
+							<i class="icofont-reply mr-2 text-muted"></i>Reply 
 							
 						</div>
 
 						<div class="comment-content mt-3">
-							<p> I suggest using leaner ground beef so there's no extra grease in the soup. Thanks for the recipe! </p>
+							<p> I used more garlic as I love the flavor, but overall a great recipe! Thanks! </p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="comment-area-box">
+						
+						<div class="comment-info">
+							<h5 class="mb-1">Brittany </h5>
+							<span>Hawaii</span>
+							<span class="date-comm">| Posted May 27th, 2022</span>
+						</div>
+
+						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
+							<i class="icofont-reply mr-2 text-muted"></i>Reply 
+							
+						</div>
+
+						<div class="comment-content mt-3">
+							<p> My family loved it! </p>
 						</div>
 					</div>
 				</li>
@@ -411,7 +454,7 @@
             <a href="#"><img class="mr-4" src="images/blog/bt-1.jpg" alt=""></a>
             <div class="media-body">
             	<span class="text-sm text-muted">12 Feb 2022</span>
-                <h6 class="my-2"><a href="#">Egg Bites</a></h6>
+                <h6 class="my-2"><a href="EggBites2.html">Egg Bites</a></h6>
             </div>
         </div>
 	</div>
@@ -439,11 +482,11 @@
 	<div class="sidebar-widget tags mb-3">
 		<h5 class="mb-4">Keywords</h5>
 
-		<a>Beef</a>
-		<a>Polish</a>
-		<a>Cabbage</a>
-		<a>Instant Pot</a>
-		<a>Easy</a>
+		<a>Chicken</a>
+		<a>Italian</a>
+		<a>Pasta</a>
+		<a>Sunday Dinner</a>
+		
 	</div>
 
 	<div class="sidebar-widget mb-3">
