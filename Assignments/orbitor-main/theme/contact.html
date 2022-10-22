@@ -32,6 +32,8 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+   <!-- Bootstrap for Send button --> 
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -81,7 +83,7 @@
       <div class="col-md-12">
         <div class="block text-center">
           <span class="text-white">Contact Us</span>
-          <h1 class="text-capitalize mb-5 text-lg">Get in Touch</h1>
+          <h1 class="text-capitalize mb-5 text-lg">Connect with us!</h1>
 
           <ul class="list-inline breadcumb-nav">
             <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
@@ -98,8 +100,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <span class="text-color">Send a message</span>
-        <h3 class="text-md mb-5">Contact Form</h3>
+        <span class="text-color">We would love to hear any thoughts and recommendations  
+          you might have for us to improve our system!</span>
+        <h3 class="text-md mb-5"><br>Contact Form</h3>
 
         <div class="row">
           <div class="col-lg-8">
@@ -115,34 +118,52 @@
 
               <div class="form-group">
                 <select class="form-control" id="exampleFormControlSelect1">
-                  <option>I Need help in ...</option>
-                  <option>Software Design</option>
-                  <option>Development cycle</option>
-                  <option>Software Development</option>
-                  <option>Maintenance</option>
-                  <option>Process Query</option>
-                  <option>Cost and Duration</option>
-                  <option>Modal Delivery</option>
+                  <option>I want to talk about...</option>
+                  <option>Website Design</option>
+                  <option>Analytics</option>
+                  <option>Recipes</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <input name="subject" id="subject" type="text" class="form-control" placeholder="Your Subject">
+                <input name="subject" id="subject" type="text" class="form-control" placeholder="Write your subject here...">
               </div>
 
               <div class="form-group">
-                <input name="name" id="name" type="text" class="form-control" placeholder="Your Name">
+                <input name="name" id="name" type="text" class="form-control" placeholder="Write your name here...">
               </div>
 
               <div class="form-group">
-                <input name="email" id="email" type="email" class="form-control" placeholder="Email Address">
+                <input name="email" id="email" type="email" class="form-control" placeholder="Write your email address here...">
               </div>
 
               <div class="form-group-2 mb-4">
                 <textarea name="message" id="message" class="form-control" rows="4"
-                  placeholder="Your Message"></textarea>
+                  placeholder="Write your message here..."></textarea>
               </div>
-              <button class="btn btn-main" name="submit" type="submit">Send Message</button>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Send</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content" style="margin-top: 100px;">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Your message was sent successfully! Please close this window and refresh your browser to return to the contact page.
+              </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
             </form>
           </div>
 
@@ -151,15 +172,18 @@
               <ul class="list-unstyled">
                 <li>
                   <h5>Call Us</h5>
-                  +88 01672 506 744
+                  123-456-7890
                 </li>
                 <li>
                   <h5>Email Us</h5>
-                  contact@mail.com
+                  Shani Nuyts - shaninuyts@usf.edu<br>
+                  Caitlin Salerno - csalerno1@usf.edu<br>
+                  Vitor Assuncao Crosera - vcrosera@usf.edu<br>
+                  Armand Araque - aaraque@usf.edu
                 </li>
                 <li>
-                  <h5>Location Map</h5>
-                  North Main Street,Brooklyn Australia
+                  <h5>Office Location</h5>
+                  6225 Bulls Ln, Tampa, FL
                 </li>
               </ul>
 
@@ -179,69 +203,6 @@
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="google-map mt-90 mb-5">
-          <div id="map"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-content pl-lg-5 mt-5 mt-lg-0 mb-5 mb-lg-0">
-          <h4 class="mb-4">Corporate Office</h4>
-
-          <ul class="address-block list-unstyled">
-            <li>
-              <i class="ti-location-pin mr-3"></i>North Main Street,Brooklyn Australia
-            </li>
-            <li>
-              <i class="ti-email mr-3"></i>Email: contact@mail.com
-            </li>
-            <li>
-              <i class="ti-mobile mr-3"></i>Phone:+88 01672 506 744
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-info mb-5 mb-lg-0 mt-md-5 mt-lg-0">
-          <h4 class="mb-4">USA Location</h4>
-          <ul class="address-block list-unstyled">
-            <li>
-              <i class="ti-location-pin mr-3"></i>North Main Street,Brooklyn Australia
-            </li>
-            <li>
-              <i class="ti-email mr-3"></i>Email: contact@mail.com
-            </li>
-            <li>
-              <i class="ti-mobile mr-3"></i>Phone:+88 01672 506 744
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="contact-info ">
-          <h4 class="mb-4">Europe</h4>
-          <ul class="address-block list-unstyled">
-            <li>
-              <i class="ti-location-pin mr-3"></i>North Main Street,Brooklyn Australia
-            </li>
-            <li>
-              <i class="ti-email mr-3"></i>Email: contact@mail.com
-            </li>
-            <li>
-              <i class="ti-mobile mr-3"></i>Phone:+88 01672 506 744
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- footer Start -->
@@ -251,9 +212,12 @@
 			<div class="col-lg-3 mr-auto col-sm-6">
 				<div class="widget mb-5 mb-lg-0">
 					<div class="logo mb-4">
-						<h3>Orbitor</h3>
+						<h3>RRS Showcase</h3>
 					</div>
-					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+					<p>Stocked pantry but nothing to eat?
+            We've got you covered!
+            Be inspired by our latest recipes for every meal from breakfast to dessert.
+            Or tell us what ingredients you have and our recommender system will do the rest.</p>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-6 col-sm-6">
@@ -261,10 +225,11 @@
 					<h4 class="text-capitalize mb-4">Company</h4>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="service.html">Services</a></li>
+						<li><a href="project.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -283,8 +248,8 @@
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="widget widget-contact mb-5 mb-lg-0">
 					<h4 class="text-capitalize mb-4">Get in Touch</h4>
-					<h6><a href="tel:+23-345-67890" > <i class="ti-headphone-alt mr-3"></i>Support@megakit.com</a></h6>
-					<h6><a href="mailto:support@gmail.com" > <i class="ti-mobile mr-3"></i>+23-456-6588</a></h6>
+					<h6><a href="tel:+23-345-67890" > <i class="ti-headphone-alt mr-3"></i>support@rrsshowcase.com</a></h6>
+					<h6><a href="mailto:support@gmail.com" > <i class="ti-mobile mr-3"></i>123-456-7890</a></h6>
 
 					<ul class="list-inline footer-socials mt-5">
 						<li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="ti-facebook mr-2"></i></a></li>
