@@ -129,6 +129,79 @@
 	</div>
 </section>
 
+<section class="Chart.js 1">
+
+	<canvas id="myChart" width="50" height="50"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+
+    <script>
+    const ctx = document.getElementById("myChart");
+    const myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: ["Chicken Cacciatore", "Irish Guinness Stew", "Unsuffed Cabbage Stew", "Mom's Zucchini Bread", "Bacon and Italian Cheese Egg Bites", "Creamy Chicken Casserole", "Devil's Food Cake Cookies"],
+            datasets: [{
+                label: "# of Views",
+                data: [147, 123, 90, 82, 67, 55, 31],
+                backgroundColor: [ /*Using Color Blind Palette from Tableau*/
+                    'rgba(0, 107, 164, 0.5)',
+                    'rgba(255, 128, 14, 0.5)',
+                    'rgba(171, 171, 171, 0.5)',
+                    'rgba(89, 89, 89, 0.5)',
+                    'rgba(95, 158, 209, 0.5)',
+                    'rgba(200, 82, 0, 0.5)',
+                    'rgba(137, 137, 137, 0.5)'
+                ],
+                borderColor: [
+                    'rgba(0, 107, 164, 1)',
+                    'rgba(255, 128, 14, 1)',
+                    'rgba(171, 171, 171, 1)',
+                    'rgba(89, 89, 89, 1)',
+                    'rgba(95, 158, 209, 1)',
+                    'rgba(200, 82, 0, 1)',
+                    'rgba(137, 137, 137, 1)'
+
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                display: false
+                },
+                title: {
+                    display: true,
+                    text: '# of Views for each Recipe',
+                    padding: {
+                        top: 10,
+                        bottom: 30
+                    },
+                    font: {
+                        size: 20,
+                        weight: 'bold'
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    /*ticks: {
+                        font: {
+                            weight: 'bold'
+                        }
+                    },*/
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+
+</section>
+
+<br>
+<br>
 
 <section class="section pt-0">
 	<div class="container">
